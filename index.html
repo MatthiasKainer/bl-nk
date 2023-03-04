@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>This should have been on Geocities</title>
+  <script src="index.js"></script>
+  <style>
+    body {
+        background-image: var(--rainbow-vertical);
+    }
+    header {
+        background-image: var(--rainbow-horizontal);
+    }
+    marquee:nth-child(2) {
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <marquee direction="down" width="100%" height="100" behavior="alternate">
+          <marquee behavior="alternate">
+            <bl-nk interval="100ms" color="red" size="35px">Welcome to my homepage</bl-nk>
+          </marquee>
+        </marquee>
+      </header>
+      
+      <marquee direction="up" scrolldelay="60" width="100%" height="300">
+        <bl-nk interval="1s" color="white">
+          Click <a href="javascript:alert('Works only with IE4')">here</a> to open my homepage
+        </bl-nk>
+      </marquee>      
+</body>
+</html>

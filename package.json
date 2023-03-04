@@ -1,0 +1,19 @@
+{
+  "name": "bl-nk",
+  "version": "1.0.0",
+  "description": "Bringing the belowed blink element back to this world",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"don't blink\"; exit 0"
+  },
+  "keywords": [
+    "blink",
+    "<blink",
+    "/>",
+    "good",
+    "ol",
+    "times"
+  ],
+  "author": "Matthias Kainer",
+  "license": "Beerware"
+}
