@@ -3,8 +3,11 @@ const css = `
   0% {
   	opacity: 100%;
   }
-  100% {
+  50% {
   	opacity: 0%;
+  }
+  100% {
+  	opacity: 100%;
   }
 }
 
