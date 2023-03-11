@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>This should have been on Geocities</title>
   <script src="index.js"></script>
+  <script type="module" src="https://matthiaskainer.github.io/website-counter/web/index.js"></script>
   <style>
     body {
-        background-image: var(--rainbow-vertical);
+      background-image: var(--rainbow-vertical);
     }
+
     header {
-        background-image: var(--rainbow-horizontal);
+      background-image: var(--rainbow-horizontal);
     }
+
     marquee:nth-child(2) {
-        text-align: center;
+      text-align: center;
     }
   </style>
 </head>
+
 <body>
-    <header>
-        <marquee direction="down" width="100%" height="100" behavior="alternate">
-          <marquee behavior="alternate">
-            <bl-nk interval="100ms" color="red" size="35px">Welcome to my homepage</bl-nk>
-          </marquee>
-        </marquee>
-      </header>
-      
-      <marquee direction="up" scrolldelay="60" width="100%" height="300">
-        <bl-nk interval="1s" color="white">
-          Click <a href="javascript:alert('Works only with IE4')">here</a> to open my homepage
-        </bl-nk>
+  <header>
+    <marquee direction="down" width="100%" height="100" behavior="alternate">
+      <marquee behavior="alternate">
+        <bl-nk interval="100ms" color="red" size="35px">Welcome to my homepage</bl-nk>
       </marquee>
-      <bl-nk interval="1s" color="white" size="50px">Open <a href="https://github.com/MatthiasKainer/bl-nk" target="_blank">on github</a></bl-nk>  
+    </marquee>
+  </header>
+
+  <marquee direction="up" scrolldelay="60" width="100%" height="300">
+    <bl-nk interval="1s" color="white">
+      Click <a href="javascript:alert('Works only with IE4')">here</a> to open my homepage
+    </bl-nk>
+  </marquee>
+  <bl-nk interval="50ms" style="display: block;">
+    <table border="1" padding="4" margin="4" style="margin: 0 auto; width:80%;">
+      <tr>
+        <th><bl-nk>Visitors</bl-nk></th>
+        <th><bl-nk>Visits</bl-nk></th>
+        <th><bl-nk>Page Views</bl-nk></th>
+      </tr>
+      <tr>
+        <td align="center">
+          <website-counter show="visitors" background="green" color="red" font="Comic Sans MS, Comic Sans">
+            Add javascript or stop visiting my website!
+          </website-counter>
+        </td>
+        <td align="center">
+          <website-counter show="sessions" background="red" color="green" font="Comic Sans MS, Comic Sans">
+            Add javascript or stop visiting my website!
+          </website-counter>
+        </td>
+        <td align="center">
+          <website-counter show="page_views" font="Comic Sans MS, Comic Sans">
+            Add javascript or stop visiting my website!
+          </website-counter>
+        </td>
+      </tr>
+    </table>
+  </bl-nk>
+  <bl-nk interval="1s" color="white" size="50px">Open <a href="https://github.com/MatthiasKainer/bl-nk"
+      target="_blank">on github</a></bl-nk>
 </body>
+
 </html>
